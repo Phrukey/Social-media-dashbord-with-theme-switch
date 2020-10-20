@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+body {
+  background: hsl(0, 0%, 100%);
+  
+}
+@font-face {
+  font-family: interlight;
+  src: url(/Inter/static/Inter-Light-slnt=0.ttf);
+}
+@font-face {
+  font-family: interBold;
+  src: url(/Inter/static/Inter-Bold-slnt=0.ttf);
+}
+@font-face {
+  font-family: interXBold;
+  src: url(/Inter/static/Inter-ExtraBold-slnt=0.ttf);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.header {
+  background: hsl(225, 100%, 98%);
+  height: 20vh;
+  border-radius: 0 0 15px 15px;
+  padding: 0 20px;
+}
+.header-info {
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+}
+.header-info h2 {
+  font-family: interBold;
+  font-size: 2rem;
+}
+.header-info p {
+  font-family: interlight;
+  font-size: 1.1rem;
+}
+.toggle {
+  padding-top: 5px;
+  font-family: interBold;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.toggle-box {
+  width: 50px;
+  height: 20px;
+  border-radius: 12px;
+  background: hsl(230, 22%, 74%);
+
+}
+.toggle-box button {
+  border-radius: 50%;
+  margin: 2px 2px;
+  height: 80%;
+  width: 15px;
+  border: transparent;
+}
+
+/* Stylings For The The Insights of Each App */
+.overall-insights{
+  padding: 20px 0;
+  margin-top: -60px;
+}
+.facebook { border-top: 5px solid hsl(208, 92%, 53%);}
+.twitter { border-top: 5px solid hsl(203, 89%, 53%);}
+.instagram { border-top: 5px solid linear gradient (to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));}
+.youtube { border-top: 5px solid hsl(348, 97%, 39%);}
+.sm {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  background: hsl(227, 47%, 96%);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.sm .sm-heading {
+  font-family: interBold;
+  color: hsl(230, 17%, 14%);
+  padding: 10px 0;
+  font-size: 1.3rem;
+}
+.sm .follower-count {
+  margin-bottom: 10px;
+}
+.sm .follower-count h3 {
+  font-size: 3.2rem;
+  width: 100%;
+  font-family: interXBold;
+}
+.sm .follower-count p {
+  font-size: 1.8rem;
+  font-family: interLight;
+  color: hsl(228, 12%, 44%);
+}
+.sm .sm-footer {
+  font-size: 1.4rem;
+  font-family: interLight;
+  color: hsl(228, 12%, 44%);
+  margin-bottom: 10px;
+}
+/* Styling for Daily Overview */
+
+.daily-overview h2 {
+  font-family: interXBold;
+  font-size: 2.5rem;
+  padding: 10px 0;
+  width: 70%;
+  margin: 0 auto;
+}
+.daily-overview .app-overview {
+  width: 70%;
+  margin: 0  auto 10px auto;
+  padding: 15px 10px;
+  border-radius: 5px;
+  background:  hsl(227, 47%, 96%);
+}
+.daily-overview .app-overview .count {
+  padding: 15px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.daily-overview .app-overview .interaction p {
+  font-family: interBold;
+  color: hsl(230, 17%, 14%);
+  font-size: 1.2rem; 
+}
+
+.daily-overview .app-overview .count span {
+  font-size: 1.2rem;
+  font-family: interlight;
+  color: hsl(230, 17%, 14%);
+}
+.daily-overview .app-overview .count p {
+  font-size: 2rem;
+  font-family: interXBold;
+}
