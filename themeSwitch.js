@@ -1,4 +1,5 @@
 const themeSwitcher = document.querySelector("button");
+const toggleBox =document.querySelector(".toggle-box")
 let lightTheme = localStorage.getItem("lightTheme");
 
 const enableLightTheme = () => {
@@ -18,7 +19,7 @@ if (lightTheme === "enabled") {
   enableLightTheme();
 }
 
-themeSwitcher.addEventListener("click", (e) => {
+toggleBox.addEventListener("click", (e) => {
 lightTheme = localStorage.getItem("lightTheme");
 if (lightTheme !== "enabled") {
   enableLightTheme();
