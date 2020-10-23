@@ -4,27 +4,26 @@
   box-sizing: border-box;
   font-size: 10px;
 }
-/* .theme-light {
-  --BG: hsl(0, 0%, 100%)
-  --Top-BG-Pattern: hsl(225, 100%, 98%)
-  --Card BG: hsl(227, 47%, 96%)
-  --Small-Text: hsl(228, 12%, 44%)
-  --Text: hsl(230, 17%, 14%)
+:root{
+  --BG: hsl(230, 17%, 14%);
+  --Top-BG-Pattern: hsl(232, 19%, 15%);
+  --Card-BG: hsl(228, 28%, 20%);
+  --Small-Text: hsl(228, 34%, 66%);
+  --Text: hsl(0, 0%, 100%);
+  --button-BG: linear gradient (to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
-.theme-dark {
+.theme-light {
+  --BG: hsl(0, 0%, 100%);
+  --Top-BG-Pattern: hsl(225, 100%, 98%);
+  --Card-BG: hsl(227, 47%, 96%);
+  --Small-Text: hsl(228, 12%, 44%);
+  --Text: hsl(230, 17%, 14%);
+  --button-BG: hsl(230, 22%, 74%);
+}
 
-  --BG: hsl(230, 17%, 14%)
-  --Top-BG-Pattern: hsl(232, 19%, 15%)
-  --Card BG: hsl(228, 28%, 20%)
-  --Small-Text: hsl(228, 34%, 66%)
-  --Text: hsl(0, 0%, 100%)
-} */
 body {
-  background: hsl(0, 0%, 100%);
+  background: var(--BG);
   
-}
-.dark body {
-  background:  hsl(230, 17%, 14%);
 }
 @font-face {
   font-family: interlight;
@@ -43,7 +42,7 @@ body {
   margin: 0 auto;
 }
 .header {
-  background: hsl(225, 100%, 98%);
+  background: var(--Top-BG-Pattern);
   height: 20vh;
   border-radius: 0 0 15px 15px;
 
@@ -52,6 +51,7 @@ body {
   padding: 10px 0;
   width: 90%;
   margin:0 auto;
+  color: var(--Text);
   border-bottom: 2px solid black;
 }
 .header-info h2 {
@@ -69,13 +69,14 @@ body {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  color: var(--Text);
   margin:0 auto;
 }
 .toggle-box {
   width: 50px;
   height: 20px;
   border-radius: 12px;
-  background: hsl(230, 22%, 74%);
+  background: var(--button-BG);
 }
 .toggle-box button {
   border-radius: 50%;
@@ -85,6 +86,7 @@ body {
   outline: none;
   cursor: pointer;
   border: transparent;
+  transition: transform 250ms ease-in;
 }
 
 /* Stylings For The The Insights of Each App */
@@ -114,14 +116,14 @@ body {
   /* width: 70%; */
   text-align: center;
   /* margin: auto; */
-  background: hsl(227, 47%, 96%);
+  background: var(--Card-BG);
   padding: 20px 15px;
   border-radius: 5px;
   cursor: pointer;
 }
 .sm .sm-heading {
   font-family: interBold;
-  color: hsl(230, 17%, 14%);
+  color: var( --Small-Text);
   /* padding: 10px 0; */
   display: flex;
   justify-content: center;
@@ -136,18 +138,19 @@ body {
 }
 .sm .follower-count h3 {
   font-size: 3.2rem;
+  color: var(--Text);
   width: 100%;
   font-family: interXBold;
 }
 .sm .follower-count p {
   font-size: 1.8rem;
   font-family: interLight;
-  color: hsl(228, 12%, 44%);
+  color: var(--Small-Text);
 }
 .sm .sm-footer {
   font-size: 1.4rem;
   font-family: interLight;
-  color: hsl(228, 12%, 44%);
+  color: var(--Small-Text);
   margin-bottom: 10px;
   display: flex;
   gap: 4px;
@@ -182,6 +185,7 @@ body {
 }
 .daily-overview h2 {
   font-family: interXBold;
+  color: var(--Small-Text);
   font-size: 2.5rem;
   padding: 10px 0;
   width: 90%;
@@ -193,7 +197,7 @@ body {
   margin: 0 ;
   padding: 20px 15px;
   border-radius: 5px;
-  background:  hsl(227, 47%, 96%);
+  background:  var(--Card-BG);
 }
 .daily-overview .app-overview .count {
   padding: 15px 0 0 0;
@@ -207,7 +211,7 @@ body {
 }
 .daily-overview .app-overview .interaction p {
   font-family: interBold;
-  color: hsl(230, 17%, 14%);
+  color: var(--Small-Text);
   font-size: 1.2rem; 
 }
 
@@ -220,6 +224,7 @@ body {
 .daily-overview .app-overview .count p {
   font-size: 2rem;
   font-family: interXBold;
+  color: var(--Text);
 }
 
 @media (min-width: 800px) {
