@@ -10,7 +10,7 @@
   --Card-BG: hsl(228, 28%, 20%);
   --Small-Text: hsl(228, 34%, 66%);
   --Text: hsl(0, 0%, 100%);
-  --button-BG: linear gradient (to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --Button-BG: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%,55%));
 }
 .theme-light {
   --BG: hsl(0, 0%, 100%);
@@ -18,7 +18,7 @@
   --Card-BG: hsl(227, 47%, 96%);
   --Small-Text: hsl(228, 12%, 44%);
   --Text: hsl(230, 17%, 14%);
-  --button-BG: hsl(230, 22%, 74%);
+  --Button-BG: hsl(230, 22%, 74%);
 }
 
 body {
@@ -76,7 +76,8 @@ body {
   width: 50px;
   height: 20px;
   border-radius: 12px;
-  background: var(--button-BG);
+  background: var(--Button-BG);
+  
 }
 .toggle-box button {
   border-radius: 50%;
@@ -218,7 +219,7 @@ body {
 .daily-overview .app-overview .count span {
   font-size: 1.4rem;
   font-family: interlight;
-  color: hsl(230, 17%, 14%);
+  color: var(--Small-Text);
   justify-self: center;
 }
 .daily-overview .app-overview .count p {
