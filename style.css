@@ -67,7 +67,9 @@ body {
   font-family: interBold;
   font-size: 1.1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
   width: 90%;
   color: var(--Text);
   margin:0 auto;
